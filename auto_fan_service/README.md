@@ -9,6 +9,12 @@ Controls a fan on the Jetson Nano based on CPU temperature.
    - Replace `/path/to/jetson-tools/` with your local path.
    - Replace `yourusername` with your Linux username.
 
+2. Copy the service file to the systemd directory:
+
+   ```bash
+   sudo cp auto_fan_service/fancontrol.service /etc/systemd/system/
+   ```
+
 2. Enable and start the service:
 
    ```bash
