@@ -1,0 +1,12 @@
+[Unit]
+Description=Jetson Nano Fan Control
+After=multi-user.target
+
+[Service]
+ExecStart=/usr/bin/python3 /path/to/jetson-tools/auto_fan_service/fan_control.py
+Restart=always
+User=yourusername
+
+[Install]
+WantedBy=multi-user.target
+
