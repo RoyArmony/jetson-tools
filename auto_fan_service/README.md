@@ -20,6 +20,7 @@ You will need:
 
 ### Wiring Diagram:
 (Created using Tinkercad)
+
 ![Fan wiring diagram](auto_fan_diagram.png)
 
 
