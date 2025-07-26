@@ -2,6 +2,26 @@
 
 Controls a fan on the Jetson Nano based on CPU temperature.
 
+## Hardware Setup
+You will need
+   - Nvidia Jetson Nano Dev Kit.
+   - 5V fan with 2-pins: VCC and GND (size 40mmx40mm to fit the Jetson heatsink mounting holes, M 2.5 screws).
+   - NPN transistor (I used 2N2222).
+   - 1K Ohm resistor.
+   - Breadboard.
+   - Some jupmer wires.
+
+### Wiring instructions:
+   - Mount the fan to the heatsink using M 2.5 screws.
+   - Fan + (Red wire) → 5V pin on Jetson Nano.
+   - Fan – (Black wire) → Collector of NPN transistor.
+   - Transistor Emitter → GND pin on Jetson Nano.
+   - Transistor Base → GPIO pin (through a 1kΩ resistor) - I used GPIO 7.
+
+### Wiring Diagram:
+![Fan wiring diagram](relative/path/to/image.png)
+
+
 ## Fan configurations
 The fan behavior is configured directly inside fan_control.py:
 ```python
@@ -10,7 +30,7 @@ TEMP_THRESHOLD = 35   # Temperature threshold in °C to turn on the fan
 SLEEP_SECONDS = 10    # Seconds between checks
 ```
 
-### Set up the systemd service
+## Set up the systemd service
 This makes the script runs automatically in the background when you the Jetson boots.
 
 1. Update `fancontrol.service` file:
