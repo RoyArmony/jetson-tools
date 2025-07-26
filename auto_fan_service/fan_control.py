@@ -4,9 +4,9 @@ import time
 # ========================
 # CONFIGURABLE PARAMETERS
 # ========================
-FAN_PIN = 7              # GPIO pin using BOARD numbering
-TEMP_THRESHOLD = 35.0    # [C] - temperature to turn on fan
-SLEEP_INTERVAL = 10       # seconds between checks
+FAN_PIN = 7              # BOARD pin number connected to the fan's transistor
+TEMP_THRESHOLD = 35.0    # Temperature threshold in [C] to turn on the fan
+SLEEP_INTERVAL = 10      # Seconds between checks
 # ========================
 
 GPIO.setwarnings(False)

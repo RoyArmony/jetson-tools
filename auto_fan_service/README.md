@@ -2,14 +2,12 @@
 
 Controls a fan on the Jetson Nano based on CPU temperature.
 
-## Setup Instructions
-
-### Fan configurations
+## Fan configurations
 The fan behavior is configured directly inside fan_control.py:
 ```python
 FAN_PIN = 7           # BOARD pin number connected to the fan's transistor
-TEMP_THRESHOLD = 35   # Temperature in °C to turn on the fan
-SLEEP_SECONDS = 5     # Time between checks
+TEMP_THRESHOLD = 35   # Temperature threshold in °C to turn on the fan
+SLEEP_SECONDS = 10    # Seconds between checks
 ```
 
 ### Set up the systemd service
