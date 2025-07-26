@@ -5,7 +5,7 @@ import time
 # CONFIGURABLE PARAMETERS
 # ========================
 FAN_PIN = 7              # BOARD pin number connected to the fan's transistor
-TEMP_THRESHOLD = 27.0    # Temperature threshold in [C] to turn on the fan
+TEMP_THRESHOLD = 35.0    # Temperature threshold in [C] to turn on the fan
 SLEEP_INTERVAL = 10      # Seconds between checks
 # ========================
 
