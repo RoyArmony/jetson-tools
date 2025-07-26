@@ -4,6 +4,9 @@ Controls a fan on the Jetson Nano based on CPU temperature.
 
 ## Setup Instructions
 
+### Set up the systemd service
+This makes the script runs automatically in the background when you the Jetson boots.
+
 1. Update `fancontrol.service` file:
 
    - Replace `/path/to/jetson-tools/` with your local path.
