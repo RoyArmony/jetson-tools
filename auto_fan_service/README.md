@@ -19,6 +19,7 @@ You will need:
    - Transistor Base → GPIO pin (through a 1kΩ resistor) - I used GPIO 7.
 
 ### Wiring Diagram:
+(Created using Tinkercad)
 ![Fan wiring diagram](auto_fan_diagram.png)
 
 
