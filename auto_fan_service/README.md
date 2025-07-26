@@ -3,9 +3,9 @@
 Controls a fan on the Jetson Nano based on CPU temperature.
 
 ## Hardware Setup
-You will need
+You will need:
    - Nvidia Jetson Nano Dev Kit.
-   - 5V fan with 2-pins: VCC and GND (size 40mmx40mm to fit the Jetson heatsink mounting holes, M 2.5 screws).
+   - 5V fan with 2-pins: VCC and GND (size 40mm x 40mm to fit the Jetson heatsink mounting holes, M 2.5 screws).
    - NPN transistor (I used 2N2222).
    - 1K Ohm resistor.
    - Breadboard.
